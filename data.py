@@ -11,10 +11,6 @@ ranking.drop(columns=['location code'], inplace = True)
 econ.replace("Korea, South", "South Korea", inplace = True)
 econ.drop(columns=['Country Name', 'CountryID', 'WEBNAME'], inplace = True)
 
-print("------------------------Rankings------------------------\n")
-print(ranking)
-print("------------------------Econ------------------------\n")
-print(econ)
 # using merge function by setting how='inner'
 dataset = pd.merge(ranking, econ, 
                    on='Country', 

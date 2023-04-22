@@ -2,7 +2,7 @@ import matplotlib.pyplot as plt
 import pandas as pd
 import seaborn as sns
 
-df = pd.read_csv('../datasets/world_rankings.csv')
+df = pd.read_csv('datasets/world_rankings.csv')
 
 """ Understand which countries have the universities with the highest and lowest quality of education. """
 df2 = df[["location", "score scaled"]]

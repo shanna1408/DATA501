@@ -2,13 +2,13 @@ import matplotlib.pyplot as plt
 import pandas as pd
 import seaborn as sns
 
-education_df = pd.read_csv('../datasets/world_rankings.csv')
-economy_df = pd.read_csv('../datasets/economic_freedom.csv',encoding_errors='ignore')
-combined_df = pd.read_csv('../datasets/rank_econ.csv')
+education_df = pd.read_csv('datasets/world_rankings.csv')
+economy_df = pd.read_csv('datasets/economic_freedom.csv',encoding_errors='ignore')
+combined_df = pd.read_csv('datasets/rank_econ.csv')
 
 
 """ Compare data between the institutions in the most economically successful countries in the world and unsuccessful countries in the world. """
-Get top 3 and bottom 3 successful countries
+""" Get top 3 and bottom 3 successful countries """
 economy_df = economy_df[['Country Name', 'World Rank']]
 economy_df = economy_df.dropna()
 sorted_df = economy_df.sort_values(by=['World Rank'])

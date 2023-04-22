@@ -2,7 +2,7 @@ import matplotlib.pyplot as plt
 import pandas as pd
 import seaborn as sns
 
-df = pd.read_csv('../datasets/world_rankings.csv')
+df = pd.read_csv('datasets/world_rankings.csv')
 
 """ Understand the connection between academic reputation and employability. """
 plot1 = sns.regplot(x="ar score", y="er score", data=df)

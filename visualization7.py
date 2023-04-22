@@ -2,8 +2,8 @@ import matplotlib.pyplot as plt
 import pandas as pd
 import seaborn as sns
 
-df = pd.read_csv('../datasets/world_rankings.csv')
-combined_df = pd.read_csv('../datasets/rank_econ.csv')
+df = pd.read_csv('datasets/world_rankings.csv')
+combined_df = pd.read_csv('datasets/rank_econ.csv')
 
 """ Compare data between various countries and Canada. """
 

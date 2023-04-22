@@ -2,7 +2,7 @@ import matplotlib.pyplot as plt
 import pandas as pd
 import seaborn as sns
 
-combined_df = pd.read_csv('../datasets/rank_econ.csv')
+combined_df = pd.read_csv('datasets/rank_econ.csv')
 
 """ Understand the connection between economic success of a country and quality of education. """
 df4 = combined_df[["Country", "score scaled", "2019 Score"]]
